@@ -1,8 +1,9 @@
 <template>
   <div class="hello_world">
+    父组件
     <div>{{msg}}</div>
-    <child></child>
     <button @click="changeA">点击改变子组件值</button>
+    <child></child>
   </div>
 </template>
 

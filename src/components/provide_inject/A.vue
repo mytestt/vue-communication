@@ -7,11 +7,16 @@
 import B from './B.vue'
 export default {
   name: 'A',
-  provide: {
-    for: 'demo'
-  },
   components: {
     B
-  }
+  },
+  data () {
+    return {
+      mssg: 'xxxx'
+    }
+  },
+  provide: {
+    msg: this.mssg
+  },
 }
 </script>

@@ -6,10 +6,10 @@
 <script>
 export default {
   name: 'C',
-  inject: ['for'],
+  inject: ['msg'],
   data () {
     return {
-      demo: this.for
+      demo: this.msg
     }
   }
 }

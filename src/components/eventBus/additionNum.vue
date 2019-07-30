@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import {EventBus} from './event-bus.js'
-console.log(EventBus)
+import {bus} from './event-bus.js'
+console.log(bus)
 export default {
   data () {
     return {
@@ -16,8 +16,8 @@ export default {
 
   methods: {
     additionHandle () {
-      EventBus.$emit('addition', {
-        num: this.num++
+      bus.$emit('addition', {
+        num: this.num
       })
     }
   }

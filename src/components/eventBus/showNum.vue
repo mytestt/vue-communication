@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { EventBus } from './event-bus.js'
+import { bus } from './event-bus.js'
 
 export default {
   data () {
@@ -13,7 +13,7 @@ export default {
   },
 
   mounted () {
-    EventBus.$on('addition', param => {
+    bus.$on('addition', param => {
       this.count = this.count + param.num
     })
   }

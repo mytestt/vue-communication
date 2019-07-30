@@ -6,7 +6,7 @@
       <button @click="to4">ref / refs</button>
       <button @click="to5">eventBus</button>
       <button @click="to6">Vuex</button>
-      <button></button>
+      <button @click="to7">$attrs与 $listeners</button>
       <button></button>
   </div>
 </template>
@@ -31,6 +31,9 @@ export default {
     },
     to6 () {
       this.$router.push('/6')
+    },
+    to7 () {
+      this.$router.push('/7')
     }
   }
 }

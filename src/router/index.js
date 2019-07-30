@@ -7,6 +7,7 @@ import A from '@/components/provide_inject/A'
 import app from '@/components/ref_refs/App'
 import index from '@/components/eventBus/index'
 import App from '@/components/vuex/App'
+import Index from '@/components/attrs_listeners/index'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/6',
       name: 'App',
       component: App
+    },
+    {
+      path: '/7',
+      name: 'Index',
+      component: Index
     }
   ]
 })

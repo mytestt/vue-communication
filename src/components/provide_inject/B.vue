@@ -11,10 +11,10 @@ export default {
   components: {
     C
   },
-  inject: ['for'],
+  inject: ['msg'],
   data () {
     return {
-      demo: this.for
+      demo: this.msg
     }
   }
 }

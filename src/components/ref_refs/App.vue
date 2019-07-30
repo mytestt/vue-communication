@@ -9,7 +9,7 @@ export default {
   },
   mounted () {
     const comA = this.$refs.comA
-    console.log(comA.name)
+    console.log("comA.name:"+comA.name)
     comA.sayHello()
   }
 }
